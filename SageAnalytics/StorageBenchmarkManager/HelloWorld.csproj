@@ -149,9 +149,14 @@
     <Compile Include="Migrations\201609030112512_Initial.Designer.cs">
       <DependentUpon>201609030112512_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609032100045_Initial1.cs" />
+    <Compile Include="Migrations\201609032100045_Initial1.Designer.cs">
+      <DependentUpon>201609032100045_Initial1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\StorageBenchmarkManagerContext.cs" />
+    <Compile Include="Models\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +165,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -177,6 +183,9 @@
     <EmbeddedResource Include="Migrations\201609030112512_Initial.resx">
       <DependentUpon>201609030112512_Initial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609032100045_Initial1.resx">
+      <DependentUpon>201609032100045_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -193,7 +202,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>11115</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:9540/</IISUrl>
+          <IISUrl>http://localhost:9541/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
